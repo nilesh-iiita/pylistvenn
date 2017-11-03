@@ -12,7 +12,7 @@ from matplotlib_venn import venn2
 
 '''
 sudo pip install matplotlib-venn
-python Python.py -f1 FILE1.csv -f2 FILE2.csv -C1 1 -a1 0 -b2 2 -m u
+python Python.py -f1 FILE1.csv -f2 FILE2.csv -C1 1 -a1 0 -b2 2 
 '''
 
 parser = argparse.ArgumentParser(add_help=False,description='Intersection of tow csv files (Lists).')
@@ -20,7 +20,7 @@ parser.add_argument('-h', '--help', action='help', default=argparse.SUPPRESS,hel
 parser.add_argument('-V','--Version', action='version', version='1.0.0(beta)')
 parser.add_argument('-f1','--file1', help='First file', required=False)
 parser.add_argument('-f2','--file2', help='Second file', required=False)
-parser.add_argument('-m','--mode', default=1, help='"c" for common, "u" for uniq', required=False)
+#parser.add_argument('-m','--mode', default=1, help='"c" for common, "u" for uniq', required=False)
 parser.add_argument('-d','--delimator', help='Delimator [c for "," t for "{tab},s for "{space}",m for ";"]', required=False)
 parser.add_argument('-C1','--col1', type=int, help='an integer in the range 1..Last column', default=1 , required=False)
 parser.add_argument('-C2','--col2', type=int, help='an integer in the range 1..Last column', default=1 , required=False)
